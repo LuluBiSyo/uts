@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            background-color: #f4f4f9;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: transform 0.3 ease;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #ecdbff;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #ecf0f1;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #34495e;
+            color: #ffffff;
+        }
+
+        .main-content {
+            margin-left: 300px; /* increased width of the sidebar + padding */
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.0em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            color: #34495e;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 10px; /* general margin for paragraphs */
+        }
+
+
+        img {
+            display: block;
+            margin: 20px 0;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style: disc inside;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .main-content p {
+            line-height: 1.6;
+            color: #2c3e50;
+            font-size: 1.1em;
+            padding-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                /* Hide the sidebar offscreen on mobile */
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .sidebar {
+                transform: translateX(0);
+                /* Show the sidebar on larger screens */
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Outline</h2>
+    <a href="#section_introduction">Introduction</a>
+    <a href="#section_people">People</a>
+    <a href="#section_resources">Resources</a>
+</div>
+
+<div class="main-content">
+    <h1>Test</h1>
+    
+    <h2 id="section_introduction">Introduction</h2>
+    <p>
+        This is a testing page
+    </p>
+    
+    <h2 id="section_people">People</h2>
+        <p>
+            TBD
+
+        </p>
+
+    
+    <h2 id="section_resources">Resources</h2>
+    <p>
+    </p>
+</div>
+
+<!--<footer>-->
+<!--    &copy; 2024 ClearFlow Typing. All rights reserved.-->
+<!--</footer>-->
+
+</body>
+</html>
